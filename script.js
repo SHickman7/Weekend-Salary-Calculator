@@ -52,7 +52,21 @@ console.log('Total Monthly cost:', totalMonthlyCost);
 
 document.querySelector('footer').innerHTML = `Total Monthly: $${totalMonthlyCost}`;
 
+// if the total monthly cost exceedds $20,000, we need to indicate this
+  //by changing the appearance of the footer
+
+    if(totalMonthlyCost > 20000){
+      let footer = document.querySelector('footer');
+      console.log(footer);
+      footer.classList.add('over-budget');
+  }
+  else{
+      let footer = document.querySelector('footer');
+  }
+
 }
+
+
 
 //function to delete entire employee row when delete button is clicked
 

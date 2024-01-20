@@ -23,3 +23,14 @@ table {
     text-decoration: none;
   }
 
+/* Footer */
+
+.over-budget{
+  font-size: 1.75em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 4em;
+  font-size: 1.75em;
+  background-color: lightpink;
+  color:red;
+}
