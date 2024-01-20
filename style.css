@@ -1,3 +1,51 @@
+/* Header */
+
+header {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: maroon;
+  color: beige;
+}
+
+/* Body */
+
+body {
+  background-color: gray;
+  font-family: 'Times New Roman', Times, serif;
+  color: maroon;
+  font-size: 1.25em;
+}
+
+h2{
+  color:maroon;
+  text-decoration: underline;
+}
+
+/* Form Elements */
+
+input {
+  padding: 0.5em;
+  width: 150px;
+  background: beige;
+  border: 2px solid;
+}
+button {
+  padding: 0.5em;
+  width: 75px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: maroon;
+  color:  lightgray;
+}
+
+#submit_button{
+  text-align: left;
+
+}
 
 
 /* TABLE */
@@ -8,7 +56,7 @@ table {
   table,
   th,
   td {
-    border: 1px solid black;
+    border: 2px solid black;
     border-collapse: collapse;
     height: 2.15em;
   }
@@ -19,11 +67,32 @@ table {
   }
   thead {
 
-    color: #000000;
+    color: beige;
+    background-color: maroon;
     text-decoration: none;
   }
 
+  tbody tr:nth-child(odd){ 
+    background: tan;
+  }
+  tbody tr:nth-child(even){
+  background: goldenrod;
+  }
+
 /* Footer */
+
+footer {
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-color: maroon;
+  color: beige;
+  font-size: 1.25em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 4em;
+}
 
 .over-budget{
   font-size: 1.75em;
@@ -31,6 +100,6 @@ table {
   padding-bottom: 1em;
   padding-right: 4em;
   font-size: 1.75em;
-  background-color: lightpink;
-  color:red;
+  background-color: red;
+  color:black;
 }
