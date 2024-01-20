@@ -1,19 +1,24 @@
 function onReady() {
     console.log("Javascript is working!");
 }
+onReady();
 
 
-
-function addEmployee (event){
+function addEmployee(event){
+  
   event.preventDefault();
+  console.log("Did this work?");
+
   let tableElement = document.querySelector("tbody");
-  let firstName = document.getElementById("firstNameInput");
-  let lastName = document.getElementById("lastNameInput");
-  let id = document.getElementById("idInput");
-  let title = document.getElementById("titleInput");
-  let annualSalary = document.getElementById("annualSalaryInput");
 
+  let firstName = document.getElementById("firstName");
+  let lastName = document.getElementById("lastName");
+  let id = document.getElementById("id");
+  let title = document.getElementById("title");
+  let annualSalary = document.getElementById("annualSalary");
 
+  
+  // Adding employee row when submit is clicked
   tableElement.innerHTML += `
   <tr>
     <td>${firstName.value}</td>
@@ -22,14 +27,21 @@ function addEmployee (event){
     <td>${title.value}</td>
     <td>${annualSalary.value}</td>
     <td>
-      <button onclick="deleteRow(event)">❌</button>
+      <button onclick="deleteRow(event)">Delete</button>
     </td>
   </tr>
 `;
-  firstName.value = "";
   
+  firstName.value = "";
+  lastName.value = "";
+  id.value = "";
+  title.value = "";
+  annualSalary.value = "";
 
 
 }
 
-  onReady();
+function deleteRow (event){
+  event.target.parentElement.parentElement.remove();
+
+}

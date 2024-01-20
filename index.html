@@ -6,40 +6,42 @@
   <script defer src="script.js"></script>
   <title>Salary Calculator</title>
 </head>
+
 <body>
   <header>
     <h1>Salary Calculator</h1>
   </header>
+
   <main>
     <h2>Add Employee</h2>
 
-    <form onSubmit="handleSubmit(event)">
+    <form onsubmit="addEmployee(event)">
       <input
-        data-testid="firstNameInput"
         placeholder="First Name"
         type="text"
-      >
+        id="firstName"
+        data-testid="firstNameInput">
       <input
-        data-testid="lastNameInput"
         placeholder="Last Name"
         type="text"
-      >
-      <input
-        data-testid="idInput"
+        id="lastName"
+        data-testid="lastNameInput">
+        <input
         placeholder="ID"
         type="text"
-      >
-      <input
-        data-testid="titleInput"
+        id="id"
+        data-testid="idInput">
+        <input
         placeholder="Title"
         type="text"
-      >
-      <input
-        data-testid="annualSalaryInput"
+        id="title"
+        data-testid="titleInput">
+        <input
         placeholder="Annual Salary"
         type="text"
-      >
-      <button type="submit" data-testid="submitButton">Submit</button>
+        id="annualSalary"
+        data-testid="annualSalaryInput">
+      <button type ="submit" data-testid="submitButton">Submit</button>
     </form>
 
 
