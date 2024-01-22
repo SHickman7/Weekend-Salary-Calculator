@@ -28,7 +28,7 @@ function addEmployee(event){
 
 /* Create our number formatter.  Got this information from
   https://stackoverflow.com/questions/149055/how-to-format-numbers-as-currency-strings */
-  
+
 const formatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD',
@@ -61,9 +61,7 @@ console.log(typeof annualSalary);
 
 totalMonthlyCost += ((Number(annualSalary))/12);
 //console.log ('Current value of total monthly cost', totalMonthlyCost);
-
 totalMonthlyCost = Number(totalMonthlyCost);
-
 console.log('Total Monthly cost:', totalMonthlyCost);
 
 
